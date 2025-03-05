@@ -30,7 +30,7 @@ services:
       - ./html:/usr/share/nginx/html:ro
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.sample-site.rule=Host(`test.prateekanand.com`)"
+      - "traefik.http.routers.sample-site.rule=Host(`test.example.com`)"
       - "traefik.http.routers.sample-site.entrypoints=websecure"
       - "traefik.http.routers.sample-site.tls=true"
       - "traefik.http.routers.sample-site.tls.certresolver=myresolver"
